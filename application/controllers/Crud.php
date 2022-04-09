@@ -20,6 +20,9 @@ class Crud extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		# return "SALAM from ci3 Crud Controller";
+		$data['title'] = "Codeigniter Ajax Crud With Jquery Data Tables And BootStrap Modals";
+		$data['heading_ci_ajax'] = "Codeigniter Ajax Crud With Jquery Data Tables And BootStrap Modals";
+		$this->load->view('crud_view',$data);
 	}
 }
