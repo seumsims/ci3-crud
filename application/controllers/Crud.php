@@ -32,6 +32,7 @@ class Crud extends CI_Controller {
 	
 		$this->parser->parse('crud_view_header', $data);
 		$this->parser->parse('crud_view', $data);
+		$this->parser->parse('crud_view_footer', $data);
 		# $this->load->view('crud_view',$data);
 	}
 }
