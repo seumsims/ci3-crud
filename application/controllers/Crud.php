@@ -20,10 +20,9 @@ class Crud extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->library('parser');
 		# return "SALAM from ci3 Crud Controller";
-		# $data['title'] = "Codeigniter Ajax Crud With Jquery Data Tables And BootStrap Modals";
-		# $data['heading_ci_ajax'] = "Codeigniter Ajax Crud With Jquery Data Tables And BootStrap Modals";
+		$this->load->library('parser');
+		
 		$data = array(
 			'title' => "Codeigniter Ajax Crud With Jquery Data Tables And BootStrap Modals",
 			'parser_test' => 'Parser is working',
@@ -33,6 +32,6 @@ class Crud extends CI_Controller {
 		$this->parser->parse('crud_view_header', $data);
 		$this->parser->parse('crud_view', $data);
 		$this->parser->parse('crud_view_footer', $data);
-		# $this->load->view('crud_view',$data);
+		
 	}
 }
