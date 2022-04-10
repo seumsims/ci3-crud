@@ -20,6 +20,6 @@ class Crud_model extends CI_Model {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		
 	}
 }
